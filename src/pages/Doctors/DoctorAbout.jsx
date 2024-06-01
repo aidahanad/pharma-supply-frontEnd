@@ -8,7 +8,7 @@ const DoctorAbout = ({ user }) => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/v1/products")
+      .get("https://pharma-supply-backend.onrender.com/api/v1/products")
       .then((res) => {
         setMedicament(res.data.filter((e) => e.fournisseurId === user._id));
       })

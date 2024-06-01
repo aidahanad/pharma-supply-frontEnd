@@ -48,7 +48,7 @@ const Signup = () => {
 
     axios
       .post(
-        `http://localhost:3000/api/v1/${
+        `https://pharma-supply-backend.onrender.com/api/v1/${
           formData.role === "pharmacien" ? "users" : "supplier"
         }`,
         data,

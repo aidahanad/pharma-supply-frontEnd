@@ -77,7 +77,7 @@ const Cart = () => {
       return;
     }
     axios
-      .post("http://localhost:3000/api/v1/orders", {
+      .post("https://pharma-supply-backend.onrender.com/api/v1/orders", {
         orderItems: cartItems,
         ...deliveryAddress,
         prixTotal: getTotalPrice(),
@@ -167,7 +167,9 @@ const Cart = () => {
         {showDeliveryAddressForm && (
           <form>
             <div className="mt-4">
-              <h3 className="text-lg font-semibold mb-2">remplire votre carte</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                remplire votre carte
+              </h3>
               <input
                 type="text"
                 name="adresseLivraison1"
@@ -196,7 +198,7 @@ const Cart = () => {
                 className="block w-full border border-gray-300 px-3 py-2 rounded focus:outline-none focus:border-blue-500 mb-2"
                 onChange={handleInputChange}
               />
-               <input
+              <input
                 type="text"
                 name="pays"
                 placeholder="Autre numero de tel"
@@ -209,7 +211,7 @@ const Cart = () => {
                 placeholder="D'autres details"
                 className="block w-full border border-gray-300 px-3 py-2 rounded focus:outline-none focus:border-blue-500 mb-4"
                 onChange={handleInputChange}
-              /> 
+              />
               <button
                 onClick={submitOrder}
                 className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"

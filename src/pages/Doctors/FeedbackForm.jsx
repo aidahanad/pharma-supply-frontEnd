@@ -63,7 +63,7 @@ const FeedbackForm = ({ fournisseur }) => {
 
     axios
       .post(
-        `http://localhost:3000/api/v1/supplier/${fournisseur._id}/feedbacks`,
+        `https://pharma-supply-backend.onrender.com/api/v1/supplier/${fournisseur._id}/feedbacks`,
         {
           name: name,
           email: email,

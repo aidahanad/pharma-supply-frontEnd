@@ -9,7 +9,7 @@ const FournisseurList = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/v1/supplier")
+      .get("https://pharma-supply-backend.onrender.com/api/v1/supplier")
       .then((res) => {
         console.log(res);
         setFournisseurs(res.data);

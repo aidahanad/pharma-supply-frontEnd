@@ -11,7 +11,9 @@ const OrdersTable = () => {
     // Fetch orders for the fournisseur
     const fetchOrders = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/v1/orders");
+        const response = await axios.get(
+          "https://pharma-supply-backend.onrender.com/api/v1/orders"
+        );
         setOrders(response.data);
         console.log(response.data);
       } catch (error) {

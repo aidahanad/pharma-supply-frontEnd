@@ -18,7 +18,7 @@ const DoctorDetails = () => {
   useEffect(() => {
     console.log(id);
     axios
-      .get("http://localhost:3000/api/v1/supplier/" + id)
+      .get("https://pharma-supply-backend.onrender.com/api/v1/supplier/" + id)
       .then((res) => {
         setUser(res.data);
       })

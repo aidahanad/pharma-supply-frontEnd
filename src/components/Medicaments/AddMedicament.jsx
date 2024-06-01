@@ -54,11 +54,15 @@ const NewProductModal = ({ visible, setVisible }) => {
       console.log(`${key}: ${value}`);
     }
     axios
-      .post("http://localhost:3000/api/v1/products", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      })
+      .post(
+        "https://pharma-supply-backend.onrender.com/api/v1/products",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      )
       .then(() => {
         toast.success("Ajouté avec success", {
           position: "bottom-center",
