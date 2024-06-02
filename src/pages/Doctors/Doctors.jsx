@@ -49,7 +49,7 @@ const Doctors = () => {
                   setDisplayedFournisseurs(fournisseurs);
                 } else {
                   setDisplayedFournisseurs(
-                    fournisseurs.filter((f) => f.nom.includes(search))
+                    fournisseurs.filter((f) => f.nom.toLowerCase().includes(search.toLowerCase()))
                   );
                 }
               }}

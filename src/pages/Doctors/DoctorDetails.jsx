@@ -48,8 +48,8 @@ const DoctorDetails = () => {
           )}
 
           <div className="max-w-[1170px] px-5 max-auto">
-            <div className="grid md:grid-cols-3 gap-[50px]">
-              <div className="md:col-span-2 ml-[100px]">
+            <div className="flex flex-col gap-[50px]">
+              <div className="md:col-span-2 xl:pl-[100px]">
                 <div className="flex items-center gap-5 ml-[50px]">
                   <div className="w-[200px] h-[200px] bg-primaryColor rounded-full overflow-hidden ">
                     <img src={user.profilePicture} />

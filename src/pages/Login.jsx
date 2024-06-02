@@ -104,7 +104,7 @@ const Login = () => {
 
   return (
     <section className="px-5 1g:px-0 gradient-header1 ">
-      <div className="w-full max-w-[570px] mx-auto rounded-1g shadow-md md:p-10">
+      <div className="w-full max-w-[570px] mx-auto rounded-1g shadow-md p-5 md:p-10">
         <h3 className=" text-headingColor text-[22px] leading-9 font-bold mb-10">
           Salut! <span className=" text-primaryColor"> Vous </span>
           Revoila

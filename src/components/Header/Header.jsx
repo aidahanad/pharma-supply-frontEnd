@@ -46,7 +46,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header flex items-center sticky__header" ref={headerRef}>
+    <header className="header flex items-center sticky__header z-50" ref={headerRef}>
       <div className="container">
         <div className="flex items-center justify-between">
           {/*=========logo========= */}
